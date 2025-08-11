@@ -66,7 +66,9 @@ body {
 
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */
 .team-member-card-image {
-    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
     border-radius: 16px;
 }
 
@@ -246,21 +248,28 @@ media queries for progressively bigger screen widths
 
 /* Media query for desktop devices */
 @media (min-width: 75em) {
-    .team-member-card-image {
-        height: 24em;
-    }
-
+    
     .main-container {
         grid-template:
             "ban ban ban ban ban ban ban ban ban ban ban ban"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "cy1 cy1 cy1 cy1 cy2 cy2 cy2 cy2 cy3 cy3 cy3 cy3" minmax(25em, auto) " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "it1 it1 it1 it1 it1 it1 it2 it2 it2 it2 it2 it2"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "it3 it3 it3 it3 it3 it3 it3 it3 it3 it3 it3 it3"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "it4 it4 it4 it4 it4 it4 it5 it5 it5 it5 it5 it5"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "it6 it6 it6 it6 it6 it6 it7 it7 it7 it7 it7 it7"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) "tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3"
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(6em, auto) " .  ref ref ref ref ref ref ref ref ref ref  . "
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "cy1 cy1 cy1 cy1 cy2 cy2 cy2 cy2 cy3 cy3 cy3 cy3" minmax(50em, auto) 
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "it1 it1 it1 it1 it1 it1 it2 it2 it2 it2 it2 it2"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "it3 it3 it3 it3 it3 it3 it3 it3 it3 it3 it3 it3"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "it4 it4 it4 it4 it4 it4 it5 it5 it5 it5 it5 it5"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "it6 it6 it6 it6 it6 it6 it7 it7 it7 it7 it7 it7"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
+            "tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(6em, auto)
+            " .  ref ref ref ref ref ref ref ref ref ref  . "
             " .  rbl rbl rbl rbl rbl rbl rbl rbl rbl rbl  . "
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
     }
