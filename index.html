@@ -1,55 +1,145 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Future of Smart Cities</title>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Grid Layout Example</title>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
   <div class="main-container">
     <div class="banner" id="banner">
-      <div class="banner-title">Future of Smart Cities</div>
+      <div class="banner-title">Evolution of Smart Cities</div>
     </div>
 
-    <div class="city-images-container">
-      <div class="team-member-card">
-        <img src="./MainImages/City1.png", class="city-image"></img>
-      </div>
-      <div class="team-member-card">
-        <img src="./MainImages/City2.png", class="city-image"></img>
-      </div>
-      <div class="team-member-card">
-        <img src="./MainImages/City3.png", class="city-image"></img>
+    <div class="team-member-card" id="cityImageContainer1">
+      <img class="team-member-card-image" id="cityImage1" src="./cityImages/City1.png"></img>
+    </div>
+    <div class="team-member-card" id="cityImageContainer2">
+      <img class="team-member-card-image" id="cityImage2" src="./cityImages/City2.png"></img>
+    </div>
+    <div class="team-member-card" id="cityImageContainer3">
+      <img class="team-member-card-image" id="cityImage3" src="./cityImages/City3.png"></img>
+    </div>
+
+    <div class="textbox" id="textBox1">
+      <div class="textbox-content">
+        As smart cities develop, a growing network of interconnected devices known as the Internet of Things (IoT),
+        is transforming the current landscape as we know it. These technological advances are reshaping how cities
+        operate and how people interact in their day-to-day lives.
       </div>
     </div>
 
-    <div class="team-member-card" id="teamMemberCard1">
+    <div id="itemContainer1">
+      <img class="team-member-card-image" id="itemImage1" src="./cityImages/Item1.png"></img>
+    </div>
+    <div id="itemContainer2">
+      <img class="team-member-card-image" id="itemImage2" src="./cityImages/Item2.png"></img>
+    </div>
+    <div id="itemContainer3">
+      <img class="team-member-card-image" id="itemImage3" src="./cityImages/Item3.png"></img>
+    </div>
+
+    <div class="textbox" id="textBox2">
+      <div class="textbox-content">
+        In the day of tomorrow, nearly every object becomes a point of data. Pedestrian crossings track foot
+        traffic, public transport adapts to rider patterns and home devices manage and adjust to temperature,
+        energy usage, security and human health.
+      </div>
+    </div>
+
+    <div id="itemContainer4">
+      <img class="team-member-card-image" id="itemImage4" src="./cityImages/Item4.png"></img>
+    </div>
+    <div id="itemContainer5">
+      <img class="team-member-card-image" id="itemImage5" src="./cityImages/Item5.png"></img>
+    </div>
+    <div id="itemContainer6">
+      <img class="team-member-card-image" id="itemImage6" src="./cityImages/Item6.png"></img>
+    </div>
+    <div id="itemContainer7">
+      <img class="team-member-card-image" id="itemImage7" src="./cityImages/Item7.png"></img>
+    </div>
+
+    <div class="textbox" id="textBox3">
+      <div class="textbox-content">
+        Through the use of real-time data, smart cities can improve the power of technology, improve urban
+        infrastructure and enhance public services. As technology advances, it will pave a way for a connected 
+        future and higher quality of life for citizens.
+      </div>
+    </div>
+
+    <div class="referencebox" id="referenceBox">
+      <div class="reference-style"> References </div>
+    </div>
+    <div class="referencebox-list-style" id="referenceBoxList">
+      <div class="reference-list-style"> 
+        1. McLaughlin K 2023, The 6 Most Futuristic Cities Being Built Around the World, viewed 2nd August 2025, https://www.architecturaldigest.com/gallery/futuristic-cities-concept-roundup
+
+        2. Giimann 2018, Future City HD 20, viewed 2nd August 2025, https://giimann.artstation.com/projects/9eEJbQ
+
+        3. Madden D 2018, The Future Of Seven Great Cities Spectacularly Reimagined, viewed 2nd August 2025, https://www.forbes.com/sites/duncanmadden/2018/06/30/the-future-of-seven-great-cities-spectacularly-reimagined/
+
+        4. Albert M (n.a.), Smart city technology coming to futuristic cities, viewed 2nd August 2025, https://www.mikealbert.com/fleet-studies-lab/smart-cities/smart-city-technology-coming-to-futuristic-cities
+
+        5. Studio L (n.a.), Metro train of the future, viewed 2nd August 2025, https://ifdesign.com/en/winner-ranking/project/metro-train-of-the-future/347877
+
+        6. grape Japan 2019, Motion Graphic Designer Takayuki Yoshida Imagines Cyberpunk Crosswalk [Video], viewed 2nd August 2025, https://grapeejapan.com/117041
+
+        7. 3BL 2016, The Future of Mobility - the Mercedes-Benz Future Bus, viewed 2nd August 2025, https://www.3blmedia.com/news/future-mobility-mercedes-benz-future-bus
+
+        8. Bersola C 2024, cdf Haikou International Duty Free Shopping Complex elevates May Day holiday shopping experience, viewed 2nd August 2025, https://moodiedavittreport.com/cdf-haikou-international-duty-free-shopping-complex-elevates-shopping-experience-this-may-day-holiday/
+
+        9. Templeton 2022, The Future of Tech: Industry Insights from Global Tech Leaders, viewed 2nd August 2025, https://www.templeton-recruitment.com/tech-news/the-future-of-tech-industry-insights-from-global-tech-leaders</div>
+    </div>
+
+    <!-- <div class="team-member-card" id="teamMemberCard1">
       <img class="team-member-card-image" id="teamMemberCardImage1" src="./images/Anuj.jpeg"></img>
-      <div class="team-member-card-blurb" id="teamMemberCardBlurb1">An emerging creative designer with 3 years of experience, Anuj specializes in digital media design, typography, and illustration. Currently studying at UniSC, she combines modern trends with a timeless aesthetic to create innovative and enduring designs</div>
-    </div>
-    <div class="team-member-card" id="teamMemberCard2">
+      <div class="team-member-card-blurb" id="teamMemberCardBlurb1">An emerging creative designer with 3 years of
+        experience, Anuj specializes in digital media design, typography, and illustration. Currently studying at
+        UniSC,
+        she combines modern trends with a timeless aesthetic to create innovative and enduring designs</div>
+    </div> -->
+    <!-- <div class="team-member-card" id="teamMemberCard2">
       <img class="team-member-card-image" id="teamMemberCardImage2" src="./images/Bob.jpeg"></img>
-      <div class="team-member-card-blurb" id="teamMemberCardBlurb2">Leonardo is a dynamic Creative Director with a dual expertise in visual design and strategic thinking. A Central Saint Martins graduate, he transforms abstract concepts into tangible solutions, employing design thinking as a catalyst for business growth and social change.</div>
+      <div class="team-member-card-blurb" id="teamMemberCardBlurb2">Leonardo is a dynamic Creative Director with a
+        dual
+        expertise in visual design and strategic thinking. A Central Saint Martins graduate, he transforms abstract
+        concepts into tangible solutions, employing design thinking as a catalyst for business growth and social
+        change.
+      </div>
     </div>
     <div class="team-member-card" id="teamMemberCard3">
       <img class="team-member-card-image" id="teamMemberCardImage3" src="./images/Diana.jpeg"></img>
-      <div class="team-member-card-blurb" id="teamMemberCardBlurb3">UX/UI Designer Kiera, a School of Visual Arts graduate, combines aesthetics with user-centric design to enhance user experience. Specializing in prototyping, user research, and interaction design, Kiera's work blends functionality and beauty.</div>
+      <div class="team-member-card-blurb" id="teamMemberCardBlurb3">UX/UI Designer Kiera, a School of Visual Arts
+        graduate, combines aesthetics with user-centric design to enhance user experience. Specializing in
+        prototyping,
+        user research, and interaction design, Kiera's work blends functionality and beauty.</div>
     </div>
-          
+
     <div class="our-clients-title" id="ourClientsTitle">Our Clients</div>
-    <div class="client-icon-container" id="clientIcon1"><img class="client-icon" src="images/Example_Client_Icon_A.png"></img></div>
-    <div class="client-icon-container" id="clientIcon2"><img class="client-icon" src="images/Example_Client_Icon_B.png"></img></div>
-    <div class="client-icon-container" id="clientIcon3"><img class="client-icon" src="images/Example_Client_Icon_C.png"></img></div>
-    <div class="client-icon-container" id="clientIcon4"><img class="client-icon" src="images/Example_Client_Icon_D.png"></img></div>
-    <div class="client-icon-container" id="clientIcon5"><img class="client-icon" src="images/Example_Client_Icon_E.png"></img></div>
-    <div class="client-icon-container" id="clientIcon6"><img class="client-icon" src="images/Example_Client_Icon_F.png"></img></div>
-    <div class="client-icon-container" id="clientIcon7"><img class="client-icon" src="images/Example_Client_Icon_G.png"></img></div>
-    <div class="client-icon-container" id="clientIcon8"><img class="client-icon" src="images/Example_Client_Icon_H.png"></img></div>    
-  </div>
-    
+    <div class="client-icon-container" id="clientIcon1"><img class="client-icon"
+        src="images/Example_Client_Icon_A.png"></img></div>
+    <div class="client-icon-container" id="clientIcon2"><img class="client-icon"
+        src="images/Example_Client_Icon_B.png"></img></div>
+    <div class="client-icon-container" id="clientIcon3"><img class="client-icon"
+        src="images/Example_Client_Icon_C.png"></img></div>
+    <div class="client-icon-container" id="clientIcon4"><img class="client-icon"
+        src="images/Example_Client_Icon_D.png"></img></div>
+    <div class="client-icon-container" id="clientIcon5"><img class="client-icon"
+        src="images/Example_Client_Icon_E.png"></img></div>
+    <div class="client-icon-container" id="clientIcon6"><img class="client-icon"
+        src="images/Example_Client_Icon_F.png"></img></div>
+    <div class="client-icon-container" id="clientIcon7"><img class="client-icon"
+        src="images/Example_Client_Icon_G.png"></img></div>
+    <div class="client-icon-container" id="clientIcon8"><img class="client-icon"
+        src="images/Example_Client_Icon_H.png"></img></div>
+  </div> -->
+
 </body>
+
 </html>
-  

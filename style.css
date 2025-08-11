@@ -7,12 +7,17 @@ variables are available to be used anywhere in our html document
 :root {
     --white: #FFFFFF;
     --black: #000000;
-    /* add in other color variables for color palette */
+    --blue: #007BFF;
+    --navy-blue: #174C74;
+    --orange: #FEC785;
+    --red: #FF4136;
+    --beige: #f5efdc;
+    --gray: #DFDFDF;
 }
 
 /* The body of the document has a white background and is set up as a vertical flexbox. */
 body {
-    background-color: var(--white);
+    background-color: var(--beige);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,130 +26,145 @@ body {
 /* Defines the main container size, we are limiting to 72em max */
 .main-container {
     max-width: 72em;
-    font-family: Inter;
-    /* TODO: set the main font color */
+    font-family: Enriqueta;
+    color: var(--black);
 }
 
 /* Here we define the aspects of style of our elements other than their grid layout */
 .banner {
-    color: white;
-    background-color: #5999FF;
-    text-align: center;
-    font-family: Inknut Antiqua;
-    font-size: 64px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-img {
-    border-radius: 20px;
-    display: block;
-}
-
-/* Container for city images to display them in a row */
-.city-images-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: nowrap; /* prevents wrapping to next row */
-    margin-bottom: 20px;
-}
-
-.city-image {
-    width: 370px;
-    max-width: 370px;
-    min-width:150px;
-    height: 370px;
-    flex: 1;
+    background-color: var(--blue);
+    /* padding: 2em; */
 }
 
 .banner-title {
-    /* TODO: banner main title font styling */
-}
-
-.banner-subtitle {
-    /* TODO: banner subtitle font styling */
+    color: var(--white);
+    font-size: 48px;
+    text-align: center;
 }
 
 .team-member-card {
-    /* TODO: style the card as a column based flexbox with rounded corners */
-    /* display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px; */
+    /* leave empty */
 }
 
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+/* image sizes for phone */
+/* .image-size-phone-1 {
+    height: 16em
+} */
+
+/* image sizes for tablet */
+/* .image-size-tablet-1 {
+    height: 20em;
+} */
+
+/* image sizes for desktop */
+/* .image-size-desktop-1 {
+    height: 24em;
+} */
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */
 .team-member-card-image {
     width: 100%;
+    border-radius: 16px;
 }
 
-.team-member-card-blurb {
-    /* TODO: style the blurb with padding */
+.textbox {
+    background-color: var(--orange);
+    /* padding: 2em; */
 }
 
-.our-clients-title {
-    /* TODO: style the 'Our Clients' text font */
+.textbox-content {
+    color: var(--navy-blue);
+    font-size: 20px;
+    text-align: center;
 }
 
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.client-icon {
-    width: 100%;
+.referencebox {
+    background-color: var(--orange);
+    /* padding: 2em; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.reference-style {
+    font-size: 40px;
+    text-align: center;
+}
+
+.referencebox-list-style {
+    background-color: var(--gray);
+    /* padding-top: 3em;
+    padding-bottom: 3em; */
+}
+
+.reference-list-style {
+    font-size: 15px;
+    text-align: center;
+    white-space: pre-line; /* adds line breaks between text */
 }
 
 /* now we create names for the grid areas for specific elements */
 #banner {
-    /* TODO: give the grid-area a name */
+    grid-area: ban;
 }
 
-#teamMemberCard1 {
-    /* TODO: give the grid-area a name */
+#textBox1 {
+    grid-area: tx1;
 }
 
-#teamMemberCard2 {
-    /* TODO: give the grid-area a name */
+#textBox2 {
+    grid-area: tx2;
 }
 
-#teamMemberCard3 {
-    /* TODO: give the grid-area a name */
+#textBox3 {
+    grid-area: tx3;
 }
 
-#ourClientsTitle {
-    /* TODO: give the grid-area a name */
+#cityImageContainer1 {
+    grid-area: cy1;
 }
 
-#clientIcon1 {
-    /* TODO: give the grid-area a name */
+#cityImageContainer2 {
+    grid-area: cy2;
 }
 
-#clientIcon2 {
-    /* TODO: give the grid-area a name */
+#cityImageContainer3 {
+    grid-area: cy3;
 }
 
-#clientIcon3 {
-    /* TODO: give the grid-area a name */
+#itemContainer1 {
+    grid-area: it1;
 }
 
-#clientIcon4 {
-    /* TODO: give the grid-area a name */
+#itemContainer2 {
+    grid-area: it2;
 }
 
-#clientIcon5 {
-    /* TODO: give the grid-area a name */
+#itemContainer3 {
+    grid-area: it3;
 }
 
-#clientIcon6 {
-    /* TODO: give the grid-area a name */
+#itemContainer4 {
+    grid-area: it4;
 }
 
-#clientIcon7 {
-    /* TODO: give the grid-area a name */
+#itemContainer5 {
+    grid-area: it5;
 }
 
-#clientIcon8 {
-    /* TODO: give the grid-area a name */
+#itemContainer6 {
+    grid-area: it6;
+}
+
+#itemContainer7 {
+    grid-area: it7;
+}
+
+#referenceBox {
+    grid-area: ref;
+}
+
+#referenceBoxList {
+    grid-area: rbl;
 }
 
 /* Use a flexible layout grid */
@@ -152,25 +172,122 @@ img {
     display: grid;
     column-gap: 1em;
 }
-  
+
 /* 
 Responsive Layout breakpoints. We start 'mobile-first' i.e. we define how the layout should look
 for the smallest screen sizes. In this case we want a single column that spans the main container.
 Because this CSS definition comes first, it will apply by default. Then we override it below with 
 media queries for progressively bigger screen widths
 */
+
+/* Media query for phone devices */
+/* .team-member-card-image {
+    height: 16em;
+} */
+
 .main-container {
-    /* TODO: setup the grid-template for mobile phone layout */
+    /* max-width: 72em; */
+    grid-template: 
+        "ban"
+        " . " minmax(2em, auto)
+        "cy1"
+        " . " minmax(2em, auto)
+        "cy2"
+        " . " minmax(2em, auto)
+        "cy3"
+        " . " minmax(2em, auto)
+        "tx1"
+        " . " minmax(2em, auto)
+        "it1"
+        " . " minmax(2em, auto)
+        "it2"
+        " . " minmax(2em, auto)
+        "it3"
+        " . " minmax(2em, auto)
+        "tx2" 
+        " . " minmax(2em, auto)
+        "it4"
+        " . " minmax(2em, auto)
+        "it5"
+        " . " minmax(2em, auto)
+        "it6"
+        " . " minmax(2em, auto)
+        "it7"
+        " . " minmax(2em, auto)
+        "tx3"
+        " . " minmax(6em, auto)
+        "ref"
+        "rbl"
+        " . " minmax(2em, auto);
 }
 
+/* Media query for tablet devices */
 @media (min-width: 50em) {
+    /* .team-member-card-image {
+        height: 20em;
+    } */
+
     .main-container {
-            /* TODO: setup the grid-template for tablet layout */
+        grid-template:
+            "ban ban ban ban ban ban ban ban"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "cy1 cy1 cy1 cy1 cy1 cy1 cy1 cy1"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "cy2 cy2 cy2 cy2 cy2 cy2 cy2 cy2"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "cy3 cy3 cy3 cy3 cy3 cy3 cy3 cy3"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it1 it1 it1 it1 it1 it1 it1 it1"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it2 it2 it2 it2 it2 it2 it2 it2"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it3 it3 it3 it3 it3 it3 it3 it3"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it4 it4 it4 it4 it5 it5 it5 it5"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it6 it6 it6 it6 it7 it7 it7 it7"
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3"
+            " .   .   .   .   .   .   .   . " minmax(6em, auto)
+            " .  ref ref ref ref ref ref  . "
+            " .  rbl rbl rbl rbl rbl rbl  . "
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
     }
+
 }
 
+/* Media query for desktop devices */
 @media (min-width: 75em) {
+    .team-member-card-image {
+        height: 24em;
+    }
+
     .main-container {
-        /* TODO: setup the grid-template for desktop layout */
+        grid-template:
+            "ban ban ban ban ban ban ban ban ban ban ban ban" 
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "cy1 cy1 cy1 cy1 cy2 cy2 cy2 cy2 cy3 cy3 cy3 cy3" minmax(25em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it1 it1 it1 it1 it1 it1 it2 it2 it2 it2 it2 it2"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it3 it3 it3 it3 it3 it3 it3 it3 it3 it3 it3 it3"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it4 it4 it4 it4 it4 it4 it5 it5 it5 it5 it5 it5"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "it6 it6 it6 it6 it6 it6 it7 it7 it7 it7 it7 it7"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3"
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(6em, auto)
+            " .  ref ref ref ref ref ref ref ref ref ref  . "
+            " .  rbl rbl rbl rbl rbl rbl rbl rbl rbl rbl  . "
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
     }
 }
