@@ -181,6 +181,8 @@ media queries for progressively bigger screen widths
 
 .main-container {
     max-width: 72em;
+    padding-left: 1em;
+    padding-right: 1em;
     grid-template:
         "ban"
         " . " minmax(2em, auto) 
@@ -227,6 +229,8 @@ media queries for progressively bigger screen widths
 
     .main-container {
         max-width: 50em;
+        padding-left: 4em;
+        padding-right: 4em;
         grid-template:
             "ban ban ban ban ban ban ban ban"
             " .   .   .   .   .   .   .   . " minmax(2em, auto) 
@@ -261,6 +265,7 @@ media queries for progressively bigger screen widths
 
 /* Media query for desktop devices */
 @media (min-width: 75em) {
+    
     .reference-style {
         font-size: 52px;
     }
@@ -283,6 +288,8 @@ media queries for progressively bigger screen widths
 
     .main-container {
         max-width: 72em;
+        padding-left: 8em;
+        padding-right: 8em;
         grid-template:
             "ban ban ban ban ban ban ban ban ban ban ban ban"
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto) 
